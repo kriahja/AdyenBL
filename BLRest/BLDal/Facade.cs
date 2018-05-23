@@ -13,6 +13,7 @@ namespace BLDal
     {
         private IRepository<Booking> bookingRepo;
         private IRepository<Package> packageRepo;
+        private IRepository<Extra> extraRepo;
 
         public IRepository<Booking> GetBookingRepository()
         {
@@ -30,6 +31,15 @@ namespace BLDal
                 packageRepo = new PackageRepository();
             }
             return packageRepo;
+        }
+
+        public IRepository<Extra> GetExtraRepository()
+        {
+            if(extraRepo == null)
+            {
+                extraRepo = new ExtraRepository();
+            }
+            return extraRepo;
         }
 
     }

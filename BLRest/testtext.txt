@@ -1,5 +1,0 @@
-Jenkins Build test
-
-Got the text kriahja.
-
-Develop branch check

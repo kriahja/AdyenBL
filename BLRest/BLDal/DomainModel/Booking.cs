@@ -18,9 +18,6 @@ namespace BLDal.DomainModel
         [DataMember]
         public int Id { get; set; }
 
-        //coofomfofmofmfomfomfo
-        //mfsmmpfompo
-
         [DataMember]
         public int adult { get; set; }
 

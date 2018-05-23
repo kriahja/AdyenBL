@@ -13,7 +13,7 @@ namespace BlueLagoonRest.Controllers
     public class PackageController : ApiController
     {
         private Facade facade = new Facade();
-        public IEnumerable<Package> GetCategories()
+        public IEnumerable<Package> GetPackages()
         {
             return facade.GetPackageRepository().ReadAll();
         }
